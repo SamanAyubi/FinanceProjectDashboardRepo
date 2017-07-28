@@ -19,13 +19,14 @@ var chart = AmCharts.makeChart("chartdiv2", {
       legend :
      	{
      	align:'left',
-		    position:'top',
-		    textClickEnabled: false,
-		    switchable:false,
-		    valueText:'',
-		    fontFamily: "Roboto-Medium",
-		    fontSize:12,
-      textColor:'#3D4850'
+	    position:'top',
+	    textClickEnabled: false,
+	    switchable:false,
+	    valueText:'',
+	    fontFamily: "Roboto-Medium",
+	    fontSize:12,
+	 "title":"Income vs Expences,in millions USD",
+	 textColor:'#3D4850'
 		  
 	   },
 	  valueAxes: [{
