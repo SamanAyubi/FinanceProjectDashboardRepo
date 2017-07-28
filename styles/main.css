@@ -1,0 +1,218 @@
+
+    #chartdiv2 {
+        width: 100%;
+        height: 500px;
+    }
+    
+
+
+.led-box {
+  width: 25%;
+  float: left;
+}
+.led-red {
+  margin: 0 auto;
+  width: 14px;
+  height: 14px;
+  background-color: #F00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+  -webkit-animation: blinkRed 0.5s infinite;
+  -moz-animation: blinkRed 0.5s infinite;
+  -ms-animation: blinkRed 0.5s infinite;
+  -o-animation: blinkRed 0.5s infinite;
+  animation: blinkRed 0.5s infinite;
+}
+
+@-webkit-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-moz-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-ms-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-o-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+
+.led-yellow {
+  margin: 0 auto;
+  width: 14px;
+  height: 14px;
+  background-color: #FF0;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12px;
+  -webkit-animation: blinkYellow 1s infinite;
+  -moz-animation: blinkYellow 1s infinite;
+  -ms-animation: blinkYellow 1s infinite;
+  -o-animation: blinkYellow 1s infinite;
+  animation: blinkYellow 1s infinite;
+}
+
+@-webkit-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}
+@-moz-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}
+@-ms-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}
+@-o-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}
+@keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}
+
+.led-green {
+  margin: 0 auto;
+  width: 14px;
+  height: 14px;
+  background-color: #ABFF00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+
+.led-blue {
+  margin: 0 auto;
+  width: 14px;
+  height: 14px;
+  background-color: #24E0FF;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3F8CFF 0 2px 14px;
+}
+
+
+    #chartdiv1 {
+        width: 100%;
+        height: 500px;
+    }
+    .map-marker {
+        /* adjusting for the marker dimensions
+    so that it is centered on coordinates */
+        
+        margin-left: -8px;
+        margin-top: -8px;
+    }
+    .map-marker.map-clickable {
+        cursor: pointer;
+    }
+    .pulse {
+        width: 10px;
+        height: 10px;
+        border: 5px solid #f7f14c;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        background-color: #716f42;
+        z-index: 10;
+        position: absolute;
+    }
+    .map-marker .dot {
+        border: 10px solid #fff601;
+        background: transparent;
+        -webkit-border-radius: 60px;
+        -moz-border-radius: 60px;
+        border-radius: 60px;
+        height: 50px;
+        width: 50px;
+        -webkit-animation: pulse 3s ease-out;
+        -moz-animation: pulse 3s ease-out;
+        animation: pulse 3s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        z-index: 1;
+        opacity: 0;
+    }
+    @-moz-keyframes pulse {
+        0% {
+            -moz-transform: scale(0);
+            opacity: 0.0;
+        }
+        25% {
+            -moz-transform: scale(0);
+            opacity: 0.1;
+        }
+        50% {
+            -moz-transform: scale(0.1);
+            opacity: 0.3;
+        }
+        75% {
+            -moz-transform: scale(0.5);
+            opacity: 0.5;
+        }
+        100% {
+            -moz-transform: scale(1);
+            opacity: 0.0;
+        }
+    }
+    @-webkit-keyframes "pulse" {
+        0% {
+            -webkit-transform: scale(0);
+            opacity: 0.0;
+        }
+        25% {
+            -webkit-transform: scale(0);
+            opacity: 0.1;
+        }
+        50% {
+            -webkit-transform: scale(0.1);
+            opacity: 0.3;
+        }
+        75% {
+            -webkit-transform: scale(0.5);
+            opacity: 0.5;
+        }
+        100% {
+            -webkit-transform: scale(1);
+            opacity: 0.0;
+        }
+    }
+    input[type=text] {
+        border: none;
+        width: 50px;
+    }
+    #chartdiv {
+        width: 100%;
+        height: 400px;
+    }
+    btn-circle {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 6px 0;
+        font-size: 12px;
+        line-height: 1.42;
+        border-radius: 25px;
+    }
+

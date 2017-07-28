@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">	
+<head>
+<title>Product Statistics</title>
+<!-- Resources -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<link rel="stylesheet" href="./styles/main.css">
+<script src="./js/main.js"></script>
+
+
+</head>
+<body style="padding:5%;">
+	<div> 
+	<div>
+         <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Financial Summary</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+      </nav>
+    <div style="margin-top:-1.7%;background:#a9a9a9;margin-left:-7%;margin-right:-7%;height:45px"><marquee><table id="marque" class="table">
+    <div style="margin-top:15px">
+      <span style="margin-right:70px" >Nifty | 9 pts.<span class="glyphicon glyphicon-triangle-top green" style="color:green"></span></span>
+      <span style="margin-right:70px">Sensex | -30 pts.<span class="glyphicon glyphicon-triangle-bottom "style="color:red"></span></span>
+      <span style="margin-right:70px">BSE | 40 pts.<span class="glyphicon glyphicon-triangle-top " style="color:green"></span></span>
+      <span style="margin-right:70px">GE T&D India | 5 %<span class="glyphicon glyphicon-triangle-top " style="color:green"></span></span>
+      <span style="margin-right:70px">Eicher Motors Ltd. | -20%<span class="glyphicon glyphicon-triangle-top " style="color:red"></span></span>
+      <span style="margin-right:70px">Crude Oil | 40%<span class="glyphicon glyphicon-triangle-top " style="color:green"></span></span>
+      <span style="margin-right:70px">Gold | 60%<span class="glyphicon glyphicon-triangle-top " style="color:green"></span></span>
+    </div>
+  </table></marquee></div>
+  </div>
+   <div> <h2 class="page-header">Dashboard</h2></div>
+         <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="./images/images.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+            </div>
+             <h1>Finance Specialists</h1>
+              <span class="text-muted">Principle Partner</span>
+              <article>
+  <p>You are viewing :</p>
+	<h4>Eight Wealth Management Limited</h4>
+	<span class="text-muted">Office :</span>
+	<div><p style="font-size:18px">Solent</p></div>
+	
+</article>
+             
+            </div>
+             
+    </div>
+    <h4 class="page-header">Your businesses across the globe</h4>
+     <div id="chartdiv1"></div>
+    <h4 class="page-header">Business growth over last six months</h4>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="ckbCheckAll"></th>
+                <th>Product</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Change%</th>
+                <th>Risk</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td><input class="form-control" style="width:250px;" type="text" id="Product" placeholder="Product"></td>
+                <td><input class="form-control" type="text" id="Jan" placeholder="Jan"></td>
+                <td><input class="form-control" type="text" id="Feb" placeholder="Feb"></td>
+                <td><input class="form-control" type="text" id="Mar" placeholder="Mar"></td>
+                <td><input class="form-control" type="text" id="Apr" placeholder="Apr"></td>
+                <td><input class="form-control" type="text" id="May" placeholder="May"></td>
+                <td><input class="form-control" type="text" id="Jun" placeholder="Jun"></td>
+                <td></td>
+                <td></td>
+                <td><a href="#" class="add-row btn btn-circle a-btn-slide-text">
+        				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        				<span><strong>Add</strong></span>            
+    				</a>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="checkBoxClass" name="record"></td>
+                <td>Parker</td>
+                <td>20 </td>
+                <td>25 </td>
+                <td>50 </td>
+                <td>72 </td>
+                <td>90 </td>
+                <td>20 </td>
+                <td>10</td>
+                <td><div class="led-box"><div class="led-green"></div></div></td>
+                <td><a href="#" class="view-graph btn  a-btn-slide-text" data-toggle="modal" data-target="#myModal">
+        				<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+        				<span><strong>View</strong></span>            
+    				</a>
+                </td>
+            </tr>
+	    <tr>
+                <td><input type="checkbox" class="checkBoxClass" name="record"></td>
+                <td>Abc</td>
+                <td>27 </td>
+                <td>-25 </td>
+                <td>67 </td>
+                <td>72 </td>
+                <td>89 </td>
+                <td>20 </td>
+                <td>69</td>
+                <td><div class="led-box"><div class="led-red"></div></div></td>
+                <td><a href="#" class="view-graph btn  a-btn-slide-text" data-toggle="modal" data-target="#myModal">
+        				<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+        				<span><strong>View</strong></span>            
+    				</a>
+                </td>
+            </tr>
+	    <tr>
+                <td><input type="checkbox" class="checkBoxClass" name="record"></td>
+                <td>Xyz</td>
+                <td>20 </td>
+                <td>25 </td>
+                <td>50 </td>
+                <td>62 </td>
+                <td>69 </td>
+                <td>32 </td>
+                <td>37</td>
+                <td><div class="led-box"><div class="led-yellow"></div></div></td>
+                <td><a href="#" class="view-graph btn a-btn-slide-text" data-toggle="modal" data-target="#myModal">
+        				<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+        				<span><strong>View</strong></span>            
+    				</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#" style="background-color: #B74533;" class="delete-row btn btn-primary btn-circle a-btn-slide-text">
+       <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+    </a><h4 class="page-header">Total funds Under Management</h4>
+     <div id="chartdiv2"></div>
+    
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Product Profit Graph</h4>
+        </div>
+        <div class="modal-body">
+          <div id="chartdiv"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>                                		
+
