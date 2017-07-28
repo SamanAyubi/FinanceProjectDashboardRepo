@@ -62,7 +62,7 @@ var chart = AmCharts.makeChart("chartdiv2", {
 	
 	"dataProvider": [
 		{
-			"year": 2014,
+			"year": 2013,
 			"income": 23.5,
 			"expenses": 18.1
 		},
