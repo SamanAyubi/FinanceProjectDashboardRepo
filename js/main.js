@@ -393,7 +393,7 @@ function createCustomMarker( image ) {
     colors:['#07bebf'],
     "dataProvider": [],
     "valueAxes": [{
-        "title": "Income in millions, USD",
+        "title": "Profit-loss, in %",
     }],
     "graphs": [{
         "balloonText": "Income in [[category]]:[[value]]",
